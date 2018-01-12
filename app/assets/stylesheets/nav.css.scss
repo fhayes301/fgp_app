@@ -1,0 +1,40 @@
+nav img {
+  width: 25%;
+  height: auto;
+  // float: left;
+  padding: 0;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.navbar .nav,
+.navbar .nav > li {
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+  *zoom:1; /* hasLayout ie7 trigger */
+  vertical-align: top;
+}
+
+.navbar-inner {
+  text-align:center;
+  background-color:#606163;
+  color: white;
+  font-size: 2em;
+}
+
+nav a {
+  color:white;
+}
+
+nav h3 {
+  display: inline-block;
+  clear:both;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.mynav {
+  position:relative;
+}
