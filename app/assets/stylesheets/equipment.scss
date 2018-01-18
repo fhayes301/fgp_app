@@ -11,10 +11,13 @@
   justify-content: center;
   white-space: nowrap;
   clear:both;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
+  margin-bottom: 5px;
+  margin-top: 15px;
   overflow-y: hidden;
   overflow-x: scroll;
   display: inline-flex;
+  border-bottom: 3px solid #adb0b5;
 }
 
 .images {
