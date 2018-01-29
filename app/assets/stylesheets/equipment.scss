@@ -4,6 +4,15 @@
 
 .static_img img {
   width: 100%;
+  max-width: 2500px;
+  display: block;
+  margin: auto;
+}
+
+.static_img {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .horizontal-equipment {
@@ -32,4 +41,8 @@
 
 .horizontal-equipment {
   overflow-x: scroll;
+}
+
+.vendors {
+
 }
