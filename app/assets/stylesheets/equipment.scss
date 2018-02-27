@@ -33,3 +33,74 @@
 .horizontal-equipment {
   overflow-x: scroll;
 }
+
+.product_block{
+  width: 200px;
+  text-align: center;
+  border: 1px solid #000000b8;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  margin-right: 12px;
+  margin-left: 12px;
+  display: inline-block;
+  float: left;
+}
+
+.product_name{
+  background-color: #bd0404;
+  color: black;
+  font-size: 14px;
+  height: 30px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.product_image{
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.shop_content{
+  clear: both;
+  text-align: center;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.all_products{
+  text-align: center;
+  width: 900px;
+  margin: auto;
+}
+
+.new_product{
+  color: black;
+  font-weight: bold;
+}
+
+.search_img{
+  height: 22px;
+  margin-left: 15px;
+}
+
+.search_bar{
+  margin-left: 145px;
+}
+
+.product_form{
+  margin-left: 50px;
+}
+
+.product_pic{
+  text-align: right;
+  padding-right: 30px !important;
+}
+
+.product_show{
+  margin-top: 40px;
+}
+
+.product_info{
+  padding-left: 40px;
+}
