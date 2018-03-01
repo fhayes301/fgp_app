@@ -1,28 +1,24 @@
-<div class='nav-container'>
-	<nav>
-		<div class="mynav">
-			<%= image_tag('logo.png') %>
-			<!-- <ul class="custom-nav nav nav-tabs">
-					<li class="dropdown pull-right">
-						 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Options<strong class="caret"></strong></a>
-						<ul class="dropdown-menu">
-							<li>hi
-							</li>
-						</ul>
-					</li>
-			</ul> -->
-			<h3 class="mynav_child"> CALL 925-766-1784 </h3>
-		</div>
-		<div class="navbar-container">
-			<div id='navbar' class="navbar">
-				<div class="navbar-inner">
-					<ul class="nav">
-						<li><a href="#">HOME</a></li>
-						<li><a href="#">SHOP</a></li>
-						<li><a href="#">ABOUT</a></li>
+<nav>
+	<div class="mynav">
+		<%= image_tag('logo.png') %>
+		<!-- <ul class="custom-nav nav nav-tabs">
+				<li class="dropdown pull-right">
+					 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Options<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li>hi
+						</li>
 					</ul>
-				</div>
-			</div>
+				</li>
+		</ul> -->
+		<h3 class="mynav_child"> CALL 925-766-1784 </h3>
+	</div>
+	<div class="navbar">
+		<div class="navbar-inner">
+			<ul class="nav">
+				<li><%= link_to 'HOME', root_path %></li>
+				<li><%= link_to 'SHOP', equipments_path %></li>
+				<li><a href="#">ABOUT</a></li>
+			</ul>
 		</div>
-	</nav>
-</div>
+	</div>
+</nav>
