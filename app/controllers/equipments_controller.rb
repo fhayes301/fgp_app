@@ -4,7 +4,7 @@ class EquipmentsController < ApplicationController
 
   def create
     @equipment = Equipment.new(equipment_params)
-    debugger
+
     ftrs = equipment_params["features"].try(:gsub, "\r\n", ",")
     @equipment.features = ftrs
     @equipment.name.downcase!
