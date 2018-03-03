@@ -4,12 +4,12 @@ class EquipmentsController < ApplicationController
 
   def create
     @equipment = Equipment.new(equipment_params)
-    debugger
+
     ftrs = equipment_params["features"].try(:gsub, "\r\n", ",")
     @equipment.features = ftrs
     @equipment.name.downcase!
     @equipment.save
-    redirect_to @equipment
+    redirect_to equipment_path(@equipment.id)
   end
 
   def show
