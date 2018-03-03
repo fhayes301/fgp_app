@@ -9,7 +9,7 @@ class EquipmentsController < ApplicationController
     @equipment.features = ftrs
     @equipment.name.downcase!
     @equipment.save
-    redirect_to @equipment
+    redirect_to equipment_path(@equipment.id)
   end
 
   def show
