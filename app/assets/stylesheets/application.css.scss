@@ -22,7 +22,7 @@
 //
 body  {
   padding:10px;
-  padding-bottom:15vh;   /* Height of the footer */
+  padding-bottom:150px;   /* Height of the footer */
 }
 
 
@@ -34,4 +34,10 @@ body  {
   margin-bottom: 200px;
   display: block;
   clear: both;
+}
+
+
+.divider {
+  border: 1px solid grey;
+
 }

@@ -27,10 +27,11 @@
   // border-bottom: 2px solid #d6d8db;
   // padding-bottom: 3%;
   // padding-top: 3%;
-    overflow: auto;
-    overflow: scroll;
-    white-space: nowrap;
-    -ms-overflow-style: -ms-autohiding-scrollbar;
+  padding: 3%;
+  overflow: auto;
+  overflow: scroll;
+  white-space: nowrap;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
   /* For WebKit implementations, provide inertia scrolling */
   -webkit-overflow-scrolling: touch;
   /* We don't want internal inline elements to wrap */
@@ -40,8 +41,6 @@
       display: none;
   }
 }
-
-
 
 .equipment-container {
   display: inline-flex;
@@ -68,8 +67,7 @@
   width: 100%;
   max-width: 1800px;
   margin: auto;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 5%;
 }
 
 #vendor-images h2 {
@@ -94,7 +92,7 @@
 #vendor-images img {
   width: 60%;
   height: auto;
-  max-width: 350px;
+  max-width: 300px;
 }
 
 #shop {
@@ -132,7 +130,9 @@
   text-align: center;
   color: black;
   font-size: 18px;
+  padding-top: 4%;
   font-weight: bold;
+  font-size: 1.6vh;
 }
 
 .all_products{
