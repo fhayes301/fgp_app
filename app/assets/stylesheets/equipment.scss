@@ -4,37 +4,56 @@
 
 .static_img img {
   width: 100%;
-  max-width: 1800px;
+  max-width: 1000px;
   display: block;
   margin: auto;
 }
 
 .static_img {
   width: 100%;
-  background-color: gray;
-
+  background-color: rgba(138, 139, 140, .6);
   justify-content: center;
   align-items: center;
 }
 
 .horizontal-equipment {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  // overflow-y: hidden;
-  overflow-x: scroll;
-  display: inline-flex;
-  border-bottom: 2px solid #d6d8db;
-  padding-bottom: 3%;
-  padding-top: 3%;
+  // width: 100%;
+  // justify-content: center;
+  // align-items: center;
+  // overflow-x: scroll;
+  // overflow-y: auto;
+  // display: inline-flex;
+  //
+  // border-bottom: 2px solid #d6d8db;
+  // padding-bottom: 3%;
+  // padding-top: 3%;
+    overflow: auto;
+    overflow: scroll;
+    white-space: nowrap;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  /* For WebKit implementations, provide inertia scrolling */
+  -webkit-overflow-scrolling: touch;
+  /* We don't want internal inline elements to wrap */
+  white-space: nowrap;
+  /* Remove the default scrollbar for WebKit implementations */
+  &::-webkit-scrollbar {
+      display: none;
+  }
 }
+
+
 
 .equipment-container {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 100%;
-  margin-left: 5%;
+  // margin-left: 5%;
+}
+
+.equipment-container img {
+  max-height: 250px;
+  padding: 14px;
 }
 
 .images h3 {
@@ -43,6 +62,7 @@
 
 #vendor-images {
   justify-content: center;
+  text-align: center;
   align-items: center;
   // display: inline-flex;
   width: 100%;
@@ -50,6 +70,11 @@
   margin: auto;
   padding-top: 2%;
   padding-bottom: 2%;
+}
+
+#vendor-images h2 {
+  padding: 2%;
+  border-top: 1px solid grey;
 }
 
 .vendor-col {
@@ -70,6 +95,10 @@
   width: 60%;
   height: auto;
   max-width: 350px;
+}
+
+#shop {
+  margin-top: 30px;;
 }
 
 .product_block{

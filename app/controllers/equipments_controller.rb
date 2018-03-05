@@ -9,6 +9,7 @@ class EquipmentsController < ApplicationController
     @equipment.features = ftrs
     @equipment.name.downcase!
     @equipment.save
+    p @equipment
     redirect_to equipment_path(@equipment.id)
   end
 

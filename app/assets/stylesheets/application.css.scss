@@ -19,3 +19,19 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  @import "equipment.scss";
+//
+body  {
+  padding:10px;
+  padding-bottom:15vh;   /* Height of the footer */
+}
+
+
+.body {
+  margin-bottom: 20px;
+}
+
+#shop {
+  margin-bottom: 200px;
+  display: block;
+  clear: both;
+}
