@@ -1,5 +1,5 @@
 class TermsController < ApplicationController
 
-  def display
+  def index
   end
 end
