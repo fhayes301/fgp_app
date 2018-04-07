@@ -14,6 +14,6 @@ Rails.application.routes.draw do
 
   resources :equipments
   
-  resources :terms
+  resources :terms, only: [:index]
 
 end

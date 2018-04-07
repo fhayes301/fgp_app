@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+##instantiate random users
+##instant equipment items
+
+User.destroy_all
+Equipment.destroy_all
+
+rand(60).times do |i|
+    user = User.create({ email: Faker::Internet.name, password: Faker::TheFreshPrinceOfBelAir.character})
+
+end
