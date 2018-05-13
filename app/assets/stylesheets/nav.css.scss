@@ -1,9 +1,69 @@
+.navbar {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color:#606163;
+  max-height: 50px;
+  font-size: 3vh;
+}
+
+.navbar-custom {
+  background-color:#606163;
+  position: relative;
+  min-height: 50px;
+  border: 1px solid transparent;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-height: 50px;
+  font-size: 3vh;
+}
+
+nav {
+  margin-top: 5px;
+  // overflow: hidden;
+
+}
+
+.actualnav {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  clear: both;
+  padding: 4px;
+  max-height: 4vh;
+  background-color:#606163;
+}
+
+.actualnav ul {
+  list-style-type: none;
+  color: black;
+  padding:0;
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.actualnav li {
+  display: inline;
+  font-size: 2vh;
+  padding: 1%;
+}
+
+nav ul {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
 nav img {
   width: 25%;
+  max-width: 250px;
   height: auto;
-  // float: left;
   padding: 0;
   margin-top: 10px;
+  margin-bottom: 10px;
   display: inline-block;
 }
 
@@ -14,14 +74,13 @@ nav img {
   *display:inline; /* ie7 fix */
   *zoom:1; /* hasLayout ie7 trigger */
   vertical-align: top;
+  padding: 0;
+  margin: 0;
+  height: inherit;
+
 }
 
-.navbar-inner {
-  text-align:center;
-  background-color:#606163;
-  color: white;
-  font-size: 2em;
-}
+
 
 nav a {
   color:white;
@@ -33,8 +92,11 @@ nav h3 {
   position: absolute;
   bottom: 0;
   right: 0;
+  margin-right: 10px;
+  font-size: 2vh;
 }
 
 .mynav {
   position:relative;
+
 }

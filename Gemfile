@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
+ruby "2.4.1"
+
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
   "https://github.com/#{repo_name}.git"
 end
-
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
@@ -34,6 +35,10 @@ gem "jquery-rails"
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'devise', '~> 4.2'
+gem 'carrierwave', '~> 0.11.2'
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
+gem 'mini_magick', '~> 4.5', '>= 4.5.1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
