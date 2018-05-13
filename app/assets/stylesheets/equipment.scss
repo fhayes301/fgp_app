@@ -2,21 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.static_img img {
+.static_img img, nav, .horizontal-equipment, footer, #vendor-images, .divider,  {
   width: 100%;
   max-width: 800px;
   display: block;
   margin: auto;
 }
 
-.static_img {
-  content: "";
-  background-image: url('transparent_stock_equipment');
-  background-size: contain;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
+// .static_img {
+//   content: "";
+//   background-image: url('transparent_stock_equipment');
+//   background-size: contain;
+//   width: 100%;
+//   justify-content: center;
+//   align-items: center;
+// }
 
 
 
@@ -58,8 +58,8 @@
   text-align: center;
   align-items: center;
   // display: inline-flex;
-  width: 100%;
-  max-width: 1800px;
+  // width: 100%;
+  // max-width: 1800px;
   margin: auto;
   padding: 5%;
 }

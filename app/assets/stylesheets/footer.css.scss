@@ -5,16 +5,35 @@ html {
 body {
     margin: 0 0 150px;
 }
-footer {
-    background: silver;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: #606163;
-    color: white;
+
+// footer {
+//     // background: silver;
+//     // margin: auto;
+//     // position: absolute;
+//     // left: 0;
+//     // bottom: 0;
+//     // width: 100%;
+//     height: 150px;
+//
+//     text-align: center;
+//     align-items: center;
+//     justify-content: center;
+//
+// }
+
+.footer-wrapper {
+  margin: auto;
+  // background: silver;
+  width: 100%;
+  max-width: 800px;
+  bottom: 0;
+  background-color: #606163;
+  color: white;
+  position: absolute;
+}
+
+.contact {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
