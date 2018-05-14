@@ -9,6 +9,10 @@
   margin: auto;
 }
 
+// .static_img img {
+//   width: 80%
+// }
+
 // .static_img {
 //   content: "";
 //   background-image: url('transparent_stock_equipment');
@@ -20,73 +24,99 @@
 
 
 
-.horizontal-equipment {
-  padding: 3%;
-  overflow: auto;
-  overflow: scroll;
+// .horizontal-equipment {
+//   // padding: 3%;
+//   // overflow: auto;
+//   overflow: scroll;
+//   direction:ltr;
+//   // whi te-space: nowrap;
+//   -ms-overflow-style: -ms-autohiding-scrollbar;
+//   /* For WebKit implementations, provide inertia scrolling */
+//   -webkit-overflow-scrolling: touch;
+//   /* We don't want internal inline elements to wrap */
+//   white-space: nowrap;
+//   /* Remove the default scrollbar for WebKit implementations */
+//   &::-webkit-scrollbar {
+//       display: none;
+//   }
+// }
+
+.equipment-container {
+  overflow-x: scroll;
+  overflow-y: hidden;
   white-space: nowrap;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  /* For WebKit implementations, provide inertia scrolling */
+  align-items: center;
+  justify-content: center;
   -webkit-overflow-scrolling: touch;
-  /* We don't want internal inline elements to wrap */
-  white-space: nowrap;
-  /* Remove the default scrollbar for WebKit implementations */
+  // margin-bottom: 2px;
+
   &::-webkit-scrollbar {
-      display: none;
+    display: none;
+  }
+
+  .images {
+    display: inline-block;
+    max-height: 150px;
+    max-width: 150px;
+    // padding: 14px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em
   }
 }
 
-.equipment-container {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  // margin-left: 5%;
+.images {
+  margin-bottom: 2px;
 }
 
-.equipment-container img {
-  max-height: 250px;
-  padding: 14px;
-}
-
-.images h3 {
-  text-align: center;
+.images img {
+  max-width: inherit;
+  padding: 2%;
 }
 
 #vendor-images {
   justify-content: center;
   text-align: center;
-  align-items: center;
+  // align-items: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
   // display: inline-flex;
   // width: 100%;
   // max-width: 1800px;
-  margin: auto;
-  padding: 5%;
+  // margin: auto;
+  // padding: 2%;
 }
 
-#vendor-images h2 {
-  padding: 2%;
-  border-top: 1px solid grey;
-}
+// #vendor-images h2 {
+//   padding: 2%;
+//   border-top: 1px solid grey;
+// }
 
 .vendor-col {
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   display: inline-flex;
-
+  max-width: 250px;
+  height: 2%
 }
+
+
 
 .vendor_row {
   justify-content: center;
   align-items: center;
+
   // border: 1px solid purple;
+
 }
 
 
 #vendor-images img {
-  width: 60%;
+  // width: 60%;
+  max-width: 200px;
   height: auto;
-  max-width: 300px;
+  // margin-right: 1.5%
 }
 
 #shop {
