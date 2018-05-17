@@ -86,15 +86,67 @@ nav a {
   color:white;
 }
 
+// nav h3 {
+//   display: inline-block;
+//   clear:both;
+//   // position: absolute;
+//   // bottom: 0;
+//   // right: 0;
+//   margin-right: 10px;
+//   font-size: 2vh;
+// }
+
 nav h3 {
-  display: inline-block;
+  // float: right;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vh;
   clear:both;
-  position: absolute;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
+}
+
+.nav-contact {
   bottom: 0;
   right: 0;
-  margin-right: 10px;
-  font-size: 2vh;
+  position: absolute;
+
 }
+#nav-center {
+  // position: absolute;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+
+}
+.nav-center-info {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vh;
+  // clear:both;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#nav-login {
+  position: absolute;
+  right: .5px;
+  top: .5px;
+}
+
+
+// h3#or {
+//   text-align: center;
+//   align-items: center;
+//   justify-content: center;
+//   float: none;
+// }
 
 .mynav {
   position:relative;
