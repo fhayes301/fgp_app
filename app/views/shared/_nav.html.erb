@@ -18,8 +18,15 @@
 	</div>
 
 	<div id='nav-center'>
-		<p class='nav-center-info'>New and Used </p>
-		<p class='nav-center-info'>Equip classment and Parts</p>
+		<div id='inner-center'>
+			<h3 class='nav-center-info'>New and Used </h3>
+			<h3 class='nav-center-info'>Equipment & Parts</h3>
+		</div>
+	</div>
+
+	<div id='nav-login'>
+		<p><%= link_to 'LOGIN', login_path %></p>
+		<!-- <p><%= link_to 'LOGOUT', logout_path %></p> -->
 	</div>
 
 	</div>
@@ -27,8 +34,6 @@
 			<ul>
 				<li><%= link_to 'HOME', root_path %></li>
 				<li><%= link_to 'SHOP', equipments_path %></li>
-				<li><%= link_to 'LOGIN', login_path %></li>
-				<li><%= link_to 'LOGOUT', logout_path %></li>
 				<li><a href="#">ABOUT</a></li>
 			</ul>
 		</div>

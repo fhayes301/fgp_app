@@ -93,6 +93,16 @@
 //   border-top: 1px solid grey;
 // }
 
+#vendor-images p {
+  margin-top: 2%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  float: right;
+  font-size: 2vh;
+  font-weight: bold;
+  font-style: italic;
+}
+
 .vendor-col {
   justify-content: space-around;
   align-items: center;
