@@ -22,12 +22,12 @@
 //
 body  {
   padding:10px;
-  padding-bottom:150px;   /* Height of the footer */
+  padding-bottom: 100px;   /* Height of the footer */
 }
 
-
-.body {
-  margin-bottom: 20px;
+html {
+    position: relative;
+    min-height: 100%;
 }
 
 #shop {
@@ -38,6 +38,8 @@ body  {
 
 
 .divider {
+  margin-top: 2%;
+  margin-bottom: 2%;
   border: 1px solid grey;
 
 }

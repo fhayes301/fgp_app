@@ -1,20 +1,31 @@
-html {
-    position: relative;
-    min-height: 100%;
+.footer-wrapper {
+  // margin: auto;
+  // background: silver;
+  width: 100%;
+  max-width: 800px;
+  bottom: 0;
+  background-color: #606163;
+  color: white;
+  position: absolute;
+  height: 100px;
 }
-body {
-    margin: 0 0 150px;
+
+.contact {
+  margin: 2%;
 }
-footer {
-    background: silver;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 150px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-color: #606163;
-    color: white;
+.contact, .title, .contact-info {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.contact-info {
+  font-size: 1.4em;
+  margin-bottom: 0;
 }
