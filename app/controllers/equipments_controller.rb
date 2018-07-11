@@ -1,4 +1,6 @@
-class EquipmentsController < ApplicationController
+class EquipmentsController<ShopifyApp::AuthenticatedController
+    skip_before_action :verify_authenticity_token    
+
   def new
   end
 
@@ -22,6 +24,7 @@ class EquipmentsController < ApplicationController
   end
 
   def index
+    @products = ShopifyAPI::Product.find(:all, params: { limit: 10 })
     @equipments = Equipment.all
     if params[:search]
       @equipments = Equipment.search(params[:search]).order("created_at DESC")
@@ -43,9 +46,9 @@ class EquipmentsController < ApplicationController
   end
 
   def destroy
-    @equipment = Equipment.find(params[:id])
-    @equipment.destroy
 
+    @equipment = Equipment.find(params[:id])
+    @equipment.destroy  
     redirect_to equipments_path
   end
 

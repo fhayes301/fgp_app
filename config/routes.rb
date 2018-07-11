@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  # root :to => 'home#index'
+  mount ShopifyApp::Engine, at: '/'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root 'static#homepage'
+  get 'shop_login'  => 'home#index'
+
 
   devise_scope :user do
     get "/login" => "devise/sessions#new" # custom path to login/sign_in

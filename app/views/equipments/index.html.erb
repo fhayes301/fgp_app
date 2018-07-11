@@ -13,6 +13,7 @@
       </div>
     <% end %>
     <% @equipments.each do |equipment| %>
+
       <div class='product_block'>
         <div class='product_name'>
           <%= equipment.name %>
@@ -29,11 +30,27 @@
             |
             <%= link_to 'Destroy', equipment_path(equipment),
                 method: :delete,
-                data: { confirm: 'Are you sure?' } %></td>
+                data: { confirm: 'Are you sure?' } %>
           </div>
         <% end %>
       </div>
     <% end %>
+        <% @products.each do |product| %>
+
+      <div class='product_block'>
+        <div class='product_name'>
+          <%= product.title %>
+        </div>
+        <div class="product_image">
+          <%= image_tag product.images.first.src , height: '150', width: '150'%>
+        </div>
+         <div class='product_price'>
+          <%= product.variants.first.attributes[:price] %>
+        </div>
+      </div>
+    <% end %>
+
+ 
   </div>
   <div class='shop_content'>
     <div>
