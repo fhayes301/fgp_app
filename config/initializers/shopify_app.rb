@@ -1,11 +1,11 @@
 ShopifyApp.configure do |config|
   config.application_name = "My Shopify App"
-  config.api_key = "00686c43106843a87164096f9866f96c"
-  config.secret = "694412cd98c39a14ab37e2eb614b7c1c"
+  config.api_key = ENV['SHOPAPI']
+  config.secret = ENV['SHOPIFYSECRET']
   config.scope = "read_orders, read_products, read_themes, write_themes"
   config.embedded_app = true
   config.after_authenticate_job = false
   config.session_repository = Shop
-  shop_url = "https://#{'00686c43106843a87164096f9866f96c'}:#{'JackDaniels2112$'}@#{'fit-gym-parts'}.myshopify.com/admin"
+  shop_url = ENV["SHOPURL"]
   ShopifyAPI::Base.site = shop_url
 end
