@@ -5,7 +5,7 @@
         <%= text_field_tag(:search, params[:search], placeholder: "Search Products", :style=>'width:200px') %>
     <% end %>
   </div>
-  <% if !equipment.empty? %>
+  <% if !@equipments.empty? %>
     <div class='all_products'>
       <%- if user_signed_in? %>
         <div class='new_product'>
