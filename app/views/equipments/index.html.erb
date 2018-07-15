@@ -1,10 +1,10 @@
 <div id='shop'>
-  <div class='search_bar'>
+  <!-- <div class='search_bar'>
     <%= form_tag(equipments_path, :method => "get", id: "search-form") do %>
         <%= image_tag('search.png', :class => "search_img") %>
         <%= text_field_tag(:search, params[:search], placeholder: "Search Products", :style=>'width:200px') %>
     <% end %>
-  </div>
+  </div> -->
     <div class='all_products'>
         <% @products.each do |product| %>
         <div class='product_block'>
